@@ -1,9 +1,16 @@
 # ClinicFlow - Medical Booking & Specialist Directory Theme
 
 ClinicFlow is a lightweight, custom-built WordPress child theme designed for modern medical clinics and healthcare providers. 
-Built with a focus on clean code, responsiveness, and performance, 
+Built with a focus on clean code, responsiveness, 
 it provides an intuitive platform for patients to discover specialists and submit appointment booking requests.
 
+---
+## 📸 Screenshots & UI Preview
+![Home page](Screenshots/home.png)
+![Doctors archive](Screenshots/specialists.png)
+![Filters](Screenshots/2filters.png)
+![Doctor profile](Screenshots/single-doctor.png)
+![Booking form](Screenshots/Booking.png)
 ---
 
 ## 🔑 Key Features
@@ -34,5 +41,14 @@ hello-elementor-child/
 ├── page-home.php               # Custom homepage template
 ├── archive-doctor.php          # Doctors directory & filtering template
 ├── single-doctor.php           # Individual doctor profile template
-├── template-parts/             # Reusable UI components
+├── CONTAXT-US.php              # Booking/contact form template
+├── template-parts/             # Overrides parent theme archive template
 └── README.md                   # Project documentation
+
+---
+
+## Requirements
+- WordPress with the Hello Elementor parent theme
+- Advanced Custom Fields (ACF) plugin
+- ACF fields on the `doctor` post type: doctor_photo, specialization, age, nationality, consultation_price, short_bio
+- A page using the "Contact" template; booking emails use wp_mail(), which needs SMTP on a real host
